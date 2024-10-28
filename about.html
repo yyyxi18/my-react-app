@@ -8,21 +8,21 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>資管3C姚育祺</h1>
+    <div class="container" id="about-me">
+        <h1 id="title">資管3C姚育祺</h1>
         <div style="height:200px">
-            <img src="about.jpg" height="100%">
+            <img id="profile-pic" src="about.jpg" height="100%">
         </div>
-        
+
         <p>你好，敝姓姚，名叫育祺。</p>
-        
+
         <h2>身家調查</h2>
         <ul>
             <li>年齡：<em>20歲</em></li>
             <li>哪裡人：<em>台北</em></li>
             <li>就讀：<em>淡江大學</em></li>
         </ul>
-        
+
         <h2>興趣愛好</h2>
         <p>我喜歡：</p>
         <ol>
@@ -30,7 +30,7 @@
             <li>看夜景</li>
             <li>看你</li>
         </ol>
-        
+
         <h2>我的經歷</h2>
         <p>曾經...</p>
         <ul>
@@ -45,5 +45,17 @@
         <p>Email: 411631269@o365.tku.edu.tw</p>
     </div>
 
+    <script>
+        // 使用 document.getElementById 來抓取 DOM 元素
+        const titleElement = document.getElementById('title');
+        const profilePicElement = document.getElementById('profile-pic');
+
+        // 修改標題的顏色
+        titleElement.style.color = 'blue';
+
+        // 修改圖片的高度
+        profilePicElement.style.height = '150px';
+    </script>
+    
 </body>
 </html>
