@@ -1,17 +1,19 @@
 import { useState } from 'react';
 import reactapp from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css';
+import './style.css';
+import aboutImage from './about.jpg';
 
 function App() {
   const [count, setCount] = useState(0)
   return (
+    
     <body>
 
       <div className="container">
         <h1>資管3C姚育祺</h1>
         <div style={{ height: '200px' }}>
-          <img src="about.jpg" alt="About me" style={{ height: '100%' }} />
+        <img src={aboutImage} alt="About me" style={{ height: '100%' }} />
         </div>
 
 
